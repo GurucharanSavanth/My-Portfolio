@@ -6,6 +6,7 @@
     <title>Gurucharan S | AI & ML Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body class="dark-mode">
 
@@ -22,8 +23,10 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#languages">Languages</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="theme-toggle" class="theme-toggle">Light Mode</button>
@@ -33,33 +36,55 @@
     <!-- Hero Section -->
     <header id="hero" class="hero">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <img src="your-picture.png" alt="Gurucharan S" class="profile-picture">
                 <h1>Gurucharan S</h1>
                 <p class="typewriter">AI & ML Developer | Driving Innovation through Cutting-Edge Technology</p>
-				<a href="#about" class="cta-button">Discover My Journey</a>
+                <a href="#about" class="cta-button">Discover My Journey</a>
             </div>
+            <canvas id="hero-canvas"></canvas>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section about" data-aos="fade-right">
         <div class="container">
             <h2>About Me</h2>
             <p>As an AI & ML Developer with a deep passion for technology, I specialize in crafting innovative solutions that bridge the gap between complex theoretical concepts and practical real-world applications. With a robust background in software development, data science, and machine learning, I am committed to driving progress and delivering impactful results through advanced AI methodologies.</p>
-		</div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="section skills" data-aos="fade-left">
         <div class="container">
             <h2>Skills</h2>
             <div id="skills-grid" class="grid"></div>
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="section education" data-aos="fade-up">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>Bachelor of Engineering in CS&IT (AI&ML) - 8.2 CGPA</h3>
+                    <p>Reva University (2022 – Present)</p>
+                </div>
+                <div class="education-item">
+                    <h3>Diploma in Computer Science & Engineering ( CSE ) - 78.06%</h3>
+                    <p>EastWest Polytechnic (2019 – 2022)</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School - 7.6 CGPA</h3>
+                    <p>Kendriya Vidyalaya Hebbal (2007 – 2017)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section projects" data-aos="fade-right">
         <div class="container">
             <h2>Projects</h2>
             <div id="projects-grid" class="grid"></div>
@@ -67,15 +92,36 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="section certifications">
+    <section id="certifications" class="section certifications" data-aos="fade-left">
         <div class="container">
             <h2>Certifications</h2>
             <div id="certifications-grid" class="grid"></div>
         </div>
     </section>
 
+    <!-- Languages Section -->
+    <section id="languages" class="section languages" data-aos="fade-up">
+        <div class="container">
+            <h2>Languages</h2>
+            <div class="languages-content">
+                <div class="language-item">
+                    <h3>Kannada</h3>
+                    <p>Native Speaker</p>
+                </div>
+                <div class="language-item">
+                    <h3>Hindi</h3>
+                    <p>Full Professional Proficiency</p>
+                </div>
+                <div class="language-item">
+                    <h3>English</h3>
+                    <p>Full Professional Proficiency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact" data-aos="fade-right">
         <div class="container">
             <h2>Contact Me</h2>
             <p>Email: <a href="mailto:savanthgc@gmail.com">savanthgc@gmail.com</a></p>
@@ -84,6 +130,9 @@
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

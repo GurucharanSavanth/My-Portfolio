@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle("dark-mode");
         themeToggle.textContent = document.body.classList.contains("light-mode") ? "Dark Mode" : "Light Mode";
     });
+	
 
     // Dynamic Content for Skills
     const skills = [
@@ -117,5 +118,91 @@ document.addEventListener("DOMContentLoaded", () => {
                 behavior: 'smooth'
             });
         });
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+// Initialize AOS (Animate on Scroll)
+AOS.init({
+    duration: 1200,
+    once: true,
+});
+
+// Create a 3D animation using Three.js
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero-canvas'), alpha: true });
+
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+const material = new THREE.MeshBasicMaterial({ color: 0x0077ff, wireframe: true });
+const torus = new THREE.Mesh(geometry, material);
+
+scene.add(torus);
+
+camera.position.z = 30;
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    torus.rotation.x += 0.01;
+    torus.rotation.y += 0.01;
+
+    renderer.render(scene, camera);
+}
+
+animate();
+
+// Trigger animations using Anime.js
+anime({
+    targets: '.profile-picture',
+    scale: [0.8, 1],
+    duration: 1500,
+    easing: 'easeInOutExpo',
+    delay: 500
+});
+
+anime({
+    targets: '.cta-button',
+    translateY: [100, 0],
+    opacity: [0, 1],
+    duration: 1000,
+    easing: 'easeOutExpo',
+    delay: 1500
+});
+
+// Intersection Observer for section animations
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
 });
