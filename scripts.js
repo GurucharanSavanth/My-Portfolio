@@ -20,16 +20,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Dynamic Content for Skills
     const skills = [
-        { title: "Python", description: "Expert in Python programming and scripting." },
-        { title: "Machine Learning", description: "Proficient in developing advanced ML models using TensorFlow and Keras, with a focus on creating scalable solutions that deliver measurable results." },
-        { title: "Deep Learning", description: "Experience in CNNs, RNNs, and neural networks." },
-        { title: "Data Science", description: "Skilled in data analysis and visualization using Pandas and Matplotlib." },
-        { title: "Java", description: "Knowledge of Java programming with a focus on object-oriented principles." },
-        { title: "C", description: "Solid foundation in C programming ." },
-        { title: "SQL", description: "Comfortable with database management and writing SQL queries." },
-        { title: "TensorFlow & Keras", description: "Advanced skills in deep learning frameworks for AI projects." },
-        { title: "Git", description: "Version control expert, managing codebases in collaborative environments." }
+	    { title: "Python", description: "Expert in Python programming and scripting with a focus on automating workflows and solving business problems." },
+	    { title: "Machine Learning", description: "Proficient in developing advanced ML models using TensorFlow and Keras, with a focus on creating scalable solutions that drive business impact." },
+	    { title: "Deep Learning", description: "Experience in CNNs, RNNs, and neural networks, applying them to solve real-world problems." },
+	    { title: "Data Science", description: "Skilled in data analysis, visualization, and deriving insights to inform strategic decisions." },
+	    { title: "Product Management", description: "Understanding of product life cycles, user research, and translating user needs into technical specifications." },
+	    { title: "Strategic Thinking", description: "Ability to analyze market trends and data to contribute to business strategy and product development." },
+	    { title: "Java", description: "Knowledge of Java programming with a focus on object-oriented principles and scalable architecture." },
+	    { title: "C", description: "Solid foundation in C programming, applied to system-level programming and optimization." },
+	    { title: "SQL", description: "Comfortable with database management, writing SQL queries, and optimizing data storage solutions." },
+	    { title: "TensorFlow & Keras", description: "Advanced skills in deep learning frameworks, applied to AI and ML projects with a focus on innovation." },
+	    { title: "Git", description: "Version control expert, managing codebases in collaborative environments and ensuring seamless integration." },
+	    { title: "Product Management", description: "Understanding of product life cycles, user research, and translating user needs into technical specifications." },
+	    { title: "Strategic Thinking", description: "Ability to analyze market trends and data to contribute to business strategy and product development." },
+	    { title: "Active Learning", description: "Continuously seeking new knowledge and skills to stay ahead in rapidly evolving fields." },
+	    { title: "Leadership", description: "Proven ability to lead teams, manage projects, and drive results in fast-paced environments." },
+	    { title: "Adaptability", description: "Quick to adapt to new challenges and technologies, ensuring continuous growth and improvement." },
+	    { title: "Team Collaboration", description: "Experienced in working within cross-functional teams to achieve common goals." },
+	    { title: "Problem Solving", description: "Adept at identifying issues and implementing effective solutions that align with business objectives." },
+	    { title: "Analytical Thinking", description: "Strong ability to analyze complex data and make informed, strategic decisions." },
+	    { title: "Communication", description: "Effective communicator, skilled in presenting complex ideas to diverse stakeholders." }
+	    
+	    
     ];
+
 
     const skillsGrid = document.getElementById("skills-grid");
     skills.forEach(skill => {
