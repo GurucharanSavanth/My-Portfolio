@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { title: "Machine Learning", description: "Proficient in developing advanced ML models using TensorFlow and Keras, with a focus on creating scalable solutions that deliver measurable results." },
         { title: "Deep Learning", description: "Experience in CNNs, RNNs, and neural networks." },
         { title: "Data Science", description: "Skilled in data analysis and visualization using Pandas and Matplotlib." },
-        { title: "Java", description: "Proficient in Java programming for backend and software development." },
-        { title: "C", description: "Strong understanding of C for system-level programming and embedded systems." },
-        { title: "SQL", description: "Experienced in managing databases and writing complex queries." },
+        { title: "Java", description: "Knowledge of Java programming with a focus on object-oriented principles." },
+        { title: "C", description: "Solid foundation in C programming ." },
+        { title: "SQL", description: "Comfortable with database management and writing SQL queries." },
         { title: "TensorFlow & Keras", description: "Advanced skills in deep learning frameworks for AI projects." },
         { title: "Git", description: "Version control expert, managing codebases in collaborative environments." }
     ];
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const certifications = [
         { title: "Salesforce: Journey to Employment (J2E)", date: "Jun 2024", image: "https://via.placeholder.com/200x200?text=Salesforce+J2E" },
         { title: "HackerRank: Problem Solving (Basic)", date: "Feb 2024", image: "https://via.placeholder.com/200x200?text=HackerRank+Problem+Solving", description: "Validated my problem-solving capabilities and proficiency in algorithmic challenges, reflecting a strong foundation in logical reasoning and coding efficiency." },
-		{ title: "REVA University: AI & ML", date: "Aug 2023", image: "https://via.placeholder.com/200x200?text=REVA+University" },
+	{ title: "REVA University: AI & ML", date: "Aug 2023", image: "https://via.placeholder.com/200x200?text=REVA+University" },
         { title: "LanguifyAI: Artificial Intelligence with Python", date: "Aug 2023", image: "https://via.placeholder.com/200x200?text=Languify+AI" },
         { title: "Coincent.ai: Artificial Intelligence with Python (Internship)", date: "Aug 2023", image: "https://via.placeholder.com/200x200?text=Coincent+AI" },
         { title: "Great Learning: Python Pandas", date: "Feb 2023", image: "https://via.placeholder.com/200x200?text=Python+Pandas" },
